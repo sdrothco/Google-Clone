@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*	End of CSS Reset */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: arial, sans-serif;
+	font-size: 14px;
+}
+
+nav {
+	position: relative;
+}
+
+.nav-bar-padding {
+	position: relative;
+    left: 0;
+    min-width: 975px;
+}
+
+.nav-bar {
+	position: absolute;
+    right: 0;
+	width: 300px;
+	margin-top: 14px;
+	line-height: 30px;
+}
+
+nav a {
+	margin: 0 6px;
+}
+
+#grid {
+	position: relative;
+	width: 22px;
+	height: 22px;
+	top: 5px;
+}
+
+.button {
+	background-color: #4285f4;
+	background: linear-gradient(#4285f4, #4683ea);
+	color: white;
+	font-weight: bold;
+	padding: 8px 13px;
+	border-radius: 2px;
+}
+
+.button:hover {
+	text-decoration: none;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0px 0px -38px 0px;
+}
+
+.main {
+	position: relative;
+	padding-top: 170px;
+	padding-bottom: 45px;
+}
+
+#search-form-padding {
+	position: relative;
+	margin:0 auto;
+    width:570px;
+    padding-left:400px;
+    left:-200px;
+}
+
+.search-form {
+    width:825px;
+}
+#search-field {
+	width: 570px;
+	height: 25px;
+	margin-top: 21px;
+	border-style: solid;
+	border-color: #D8D8D8;
+	border-width: 1px;
+}
+
+#search-field:hover {
+	border: 1px solid #BDBDBD;
+}
+
+.microphone {
+	position: absolute;
+	width: 24px;
+	top: 122px;
+	right: 0;
+}
+
+.search-button {
+	padding: 6px 8px;
+	margin: 16px 11px 0 0;
+	font-weight: bold;
+	font-size: 11px;
+	color: #424242;
+	border-radius: 7%;
+	border: 1px solid #D8D8D8;
+	background-color: #F2F2F2;
+}
+
+.search-button:hover {
+	border: 1px solid #BDBDBD;
+	box-shadow: 0 1px 0 0 #BDBDBD;
+}
+
+#search-submit {
+	margin-left: 172px;
+}
+
+.search-button:focus, #search-field:focus {
+	border: 1px solid #4285f4;
+	box-shadow: none;
+	outline: none;
+}
+
+#logo {
+	margin-left: 150px;
+	width: 273px;
+
+}
+fieldset {
+	width: 570px;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #F2F2F2;
+	height: 37px;
+	border-top: 1px solid #E6E6E6;
+    min-width: 950px;
+
+}
+
+/* hide the footer if the viewport is too small to display it without covering the search field */
+/*@media all and (min-height: 0) and (max-height: 425px) {
+	footer {
+		display:none;
+	}
+}*/
+
+.left-footer {
+	float: left;
+	margin-top: 12px;
+}
+.right-footer {
+	float: right;
+	margin-top: 12px;
+}
+
+a {
+	font-size: 13px;
+	font-style: normal;
+	color: #585858;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.right-footer a {
+	padding-right: 29px;	
+}
+
+.left-footer a {
+	padding-left: 28px;	
+}
